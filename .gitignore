@@ -1,1 +1,5 @@
 flask
+tmp
+db_repository
+__pycache__
+*.pyc
