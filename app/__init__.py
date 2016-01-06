@@ -16,3 +16,6 @@ oid = OpenID(app, os.path.join(basedir, 'tmp'))
 lm.login_view = 'login'
 
 from app import views, models
+
+from flask.ext.mail import Mail
+mail = Mail(app)

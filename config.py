@@ -1,4 +1,5 @@
 import os
+
 WTF_CSRF_ENABLED = True
 SECRET_KEY = 'password'
 
@@ -20,3 +21,14 @@ POSTS_PER_PAGE = 3
 WHOOSH_BASE = os.path.join(basedir, 'search.db')
 
 MAX_SEARCH_RESULTS = 50
+
+# email server
+MAIL_SERVER = 'smtp.gmail.com'
+MAIL_PORT = 465
+MAIL_USE_TLS = False
+MAIL_USE_SSL = True
+MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
+MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
+
+# administrator list
+ADMINS = ['liujian81@gmail.com']
